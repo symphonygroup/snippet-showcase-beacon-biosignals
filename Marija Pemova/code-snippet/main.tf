@@ -44,7 +44,7 @@ resource "aws_glue_job" "deals_transform_glue_job" {
  connections = flatten([
    try(aws_glue_connection.rds_connection[0].name, []),
    values(aws_glue_connection.vpc_subnets)[*].name
- ])
+ ]) 
 
  command {
    script_location = "s3://${module.data_lake_bucket.bucket_name}/scripts/${module.data_lake_bucket.dl_script_deals_transform}"

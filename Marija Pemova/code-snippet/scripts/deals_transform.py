@@ -24,6 +24,7 @@ job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
 
+
 # PARAMETERS
 ENVIRONMENT = args["ENVIRONMENT"]
 PRODUCT = args["PRODUCT"]

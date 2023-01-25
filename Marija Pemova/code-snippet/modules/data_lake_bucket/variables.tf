@@ -8,4 +8,4 @@ variable "py_script_deals_transform" {
   description = "Python script name for deals transformation."
   type        = string
   default     = "deals_transform.py"
-}
+} 
