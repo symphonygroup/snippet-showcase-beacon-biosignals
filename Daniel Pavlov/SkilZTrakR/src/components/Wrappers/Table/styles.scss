@@ -1,0 +1,27 @@
+.sticky-table-header {
+  border-collapse: separate !important;
+  border-spacing: 0;
+
+  th {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #EFEFF2;
+    z-index: 5;
+  }
+
+  tbody > tr {
+    &:hover {
+      background: rgba(26, 26, 36, 0.04);
+    }
+  }
+
+  tbody > tr > td {
+    border-bottom: 1px solid;
+    border-color: #EFEFF2;
+  }
+}
+
+.chkbox-shadow .chakra-checkbox__control:focus-visible,
+.chkbox-shadow .chakra-checkbox__control[data-focus-visible] {
+  box-shadow: none;
+}

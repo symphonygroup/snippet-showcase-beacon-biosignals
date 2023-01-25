@@ -1,0 +1,18 @@
+.organization-employees-table-row-edit-icon,
+.organization-employees-table-row-delete-icon {
+  visibility: hidden;
+}
+
+.organization-employees-table-row {
+  &:hover {
+    .organization-employees-table-row-edit-icon,
+    .organization-employees-table-row-delete-icon {
+      visibility: visible;
+    }
+  }
+}
+
+.chkbox-shadow .chakra-checkbox__control:focus-visible,
+.chkbox-shadow .chakra-checkbox__control[data-focus-visible] {
+  box-shadow: none;
+}
