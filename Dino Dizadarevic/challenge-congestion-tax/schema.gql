@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @upper on FIELD_DEFINITION
+
+type CalculatorResult {
+  tax: Float!
+}
+
+type Vehicle {
+  type: String!
+}
+
+type Query {
+  vehicle(id: Float!): Vehicle!
+}
+
+type Mutation {
+  calculate(calculate: CalculatorInput!): CalculatorResult!
+}
+
+input CalculatorInput {
+  type: String!
+  interval: [DateTime!]!
+  city: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
