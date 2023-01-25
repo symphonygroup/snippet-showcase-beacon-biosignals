@@ -2,6 +2,8 @@
 
 - generic useInfiniteScroll hook
 - usage samples in components
+- redux/redux-saga definitions
+- tests using jest/react-testing-library
 
 This code is **not runnable**, it's just a sample to showcase a generic functionality applied throughout a project
 
